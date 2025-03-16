@@ -1,7 +1,7 @@
 function add(expression) {
   const delimiter = new Set([",", "\n"]);
   let nums = expression;
-  if (expression.startsWith("\\")) {
+  if (expression.startsWith("//")) {
     const [customDelimiter, ...numbers] = expression.split("\n");
     delimiter.add(customDelimiter.at(-1));
     nums = numbers.join("\n");

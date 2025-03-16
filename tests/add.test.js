@@ -26,6 +26,6 @@ describe("add", () => {
   });
 
   it("should sum n numbers with dynamic delimiter", () => {
-    expect(add("\\;\n1;2")).toBe(3);
+    expect(add("//;\n1;2")).toBe(3);
   });
 });

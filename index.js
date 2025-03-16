@@ -1,3 +1,3 @@
 const add = require("./src/add");
 
-console.log(add("\\;\n1;2"));
+console.log(add("//;\n1;2"));
