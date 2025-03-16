@@ -12,4 +12,8 @@ describe("add", () => {
   it("should sum n comma separated numbers", () => {
     expect(add("1,2,3,4")).toBe(10);
   });
+
+  it("should sum numbers with '\n' delimiter", () => {
+    expect(add("7\n2")).toBe(9);
+  });
 });
