@@ -32,7 +32,20 @@ describe("add", () => {
   it("should sum n numbers with dynamic delimiter", () => {
     expect(add("//;\n1;2;8")).toBe(11);
   });
-  it("should throw error for negative numbers", () => {
+
+  it("should throw error for negative number", () => {
     expect(() => add("//;\n1;-2;8")).toThrow("negative numbers not allowed -2");
+  });
+
+  it("should throw error for multiple negative numbers", () => {
+    expect(() => add("//;\n1;-2;8;-4")).toThrow(
+      "negative numbers not allowed -2,-4"
+    );
+  });
+
+  it("should throw error without dynamic delimiter", () => {
+    expect(() => add("1,-2,8\n-4")).toThrow(
+      "negative numbers not allowed -2,-4"
+    );
   });
 });
