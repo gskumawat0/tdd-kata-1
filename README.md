@@ -2,6 +2,15 @@
 
 A simple string calculator that performs addition on a string of comma-separated numbers (and newline-separated numbers). The calculator also supports custom delimiters.
 
+## Features
+
+- Supports comma-separated numbers.
+- Handles new lines as delimiters.
+- Allows custom delimiters.
+- Throws exceptions for negative numbers.
+- Fully tested using Jest.
+
+
 ## Prerequisites
 
 - Node.js >= v20.9.0
